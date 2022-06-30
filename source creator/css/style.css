@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.clearfix::after {
+	content: ".";
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	display: block;
+}
+
+*{
+	box-sizing: border-box;
+}
+/***********************************************************************************
+/***********************************************************************************
+/* BASE STYLES
+/*******************************************/
+body {
+	background: #f5f9fc;
+	font-family: 'Source Sans Pro';
+}
+
+nav{
+	height:100px;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav{
+	height: 100px;
+	width:99.89%;
+	/* border: 1px solid red; */
+}
+
+/* float */
+.left-box, .right-box, .middle-box{
+	float: left;
+	height: 75px;
+	width: 15%;
+	margin: 10px 5px;
+	text-align: center;
+}
+/* .left-box, .right-box {
+	width:15%;
+} */
+.middle-box{
+	width: 65%;
+}
+
+
+/* 同一行对齐 */
+.right-box a, .middle-box a, .left-box h2{
+	display:inline-block;
+}
+
+.right-box a {
+	margin-top:18px;
+	text-decoration: none;
+	padding: 10px 25px;
+	background-color: #304659;
+	color: white;	
+}
+
+.middle-box a {
+	margin:30px 30px 0 20px;
+	color: #304659;
+	text-decoration: none;
+}
+
+.left-box h2{
+	margin-top: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	color: #304659;
+}
+
+/* HEADER UNTIL HERE */
+
+/* FIRST SECTION */
+/* main float */
+.main{
+	float:left;
+	width:39%;
+	margin: 7% 0 0 11%;
+}
+.figure{
+	float:right;
+	width:50%;
+	padding-top: 40px;
+}
+
+.figure img{
+	width: 100%;
+}
+
+.main span {
+	color: gray;
+	margin-bottom: 5%;
+	display:inline-block;
+	font-size: 0.75rem;
+	letter-spacing: 0.04rem;
+}
+
+.main h1{
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: #304659;
+	margin-bottom: 6%;
+}
+
+.main input{
+	width:45%;
+	background-color: #e1e9f0;
+	padding: 1.7% 0;
+	border: none;
+}
+
+.main input::placeholder{
+	padding-left: 5%;
+}
+
+.main button {
+	padding: 1.7% 4%;
+	background: #304659;
+	color: white;
+	border: none;
+  font-weight:bold;
+}
+
+.main form{
+	margin-bottom: 6%;
+}
+
+.main p{
+	line-height: 1.2rem;
+	color: #516678;
+}
+
+/* SECOND SECTION  */
+
+.feature{
+	width:100%;
+	padding: 5% 0 7% 11%;
+}
+
+/* four feature float */
+.feature div {
+	float: left;
+	width: 20%;
+	margin-right: 3%;
+}
+
+.feature h4{
+	margin-top: 6%;
+	margin-bottom: 4%;
+	color: #304659;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.feature p{
+	line-height: 1.2rem;
+	margin-bottom: 10%;
+}
+
+.feature a{
+	color: #304659;
+	font-weight: 600;
+	text-decoration: none;
+  /* margin-top: 10%; */
+}
+
+/* THIRD SECTION */
+
+.info {
+	background: white;
+}
+.info {
+	height: 300px;
+	padding: 7% 0 0 11%;
+}
+
+.info h2{
+	margin-bottom:2%;
+	font-size: 2.7rem;
+	color: #304659;
+	font-weight: bold;
+}
+.info p {
+	color: #516678;
+	line-height: 1.2rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media all and (max-width: 600px){
+	span, input, button, p, h1{
+		width:100% !important;
+    clear:both;
+    /* text-align: center; */
+	}
+  
+	.figure{
+    margin-top:50px;
+		width:100%;
+	}
+  .info,.feature,.middle-box,.right-box{
+    display:none;
+  }
+  
+}

@@ -1,0 +1,70 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 55px;
+  background: black;
+  color: white;
+}
+nav *{
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
+nav ul{
+  width: 60%;
+}
+/* 解决右上方表格 */
+nav form input{
+  width: 100%;
+}
+/* 解决下面三列 */
+main + section > section{
+  width: 33.3333%;
+  float: left;
+}
+
+main > section{
+  width: 50%;
+  height: 500px;
+  float: left;
+}
+
+main section + section section{
+  width: 50%;
+  height: 250px;
+  float: left;
+  border: 1px solid black;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

@@ -1,0 +1,345 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input {
+	width:5%;
+}
+
+
+.clearfix::after{
+	content:".";
+	display: block;
+	visibility: hidden;
+	clear:both;
+	height:0;
+	line-height: 0;
+}
+
+/* BASE STYLES */
+
+body{
+	font-family: 'helvetica';
+}
+
+h1, h2, .schedule a, .workdays p+p {
+	font-family: 'DM Serif Display';
+}
+
+h2, h3{
+	color: orange;
+	text-align: center;
+}
+
+h3{
+	font-weight: bold;
+	padding-top: 100px;
+	margin-bottom: 10px;
+}
+
+h6{
+	font-size: 1.7rem;
+}
+
+h2{
+	color: black;
+	font-size: 4rem;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/* HEADER */
+
+header a{
+	color:black;
+}
+
+header{
+	height: 15px;
+	/* border: 2px solid green; */
+}
+
+.left-box,.right-box{ 
+	float: right;
+	margin-top: 7px;
+	padding: 1.5%;
+}
+
+.left-box a, .right-box a {
+	display:inline-block;
+	padding-left: 20px;
+}
+
+.right-box{
+	/* border: 2px solid blue; */
+	margin-right: 7%;
+}
+
+.right-box a{
+	margin-left: 10px;
+}
+
+/* FIRST SECTION - MAIN */
+main{
+	padding-left: 10%;
+	padding-bottom: 100px;
+  /* background-color: rgb(246, 248, 246) */
+}
+
+.background-top{
+	background-image: url("sec1.png");
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+	background-size:100% auto;
+  background-size:cover;
+  /* background-color: rgb(246, 248, 246) */
+}
+
+main h1{
+	padding-top: 7%;
+	font-size: 4.5rem;
+	word-spacing: 0.3rem;
+	line-height: 5rem;
+  margin-bottom: 3%;
+}
+
+main input{
+	margin-top: 1.3%;
+	padding: 0.6% 0 0.6% 1%;
+	width:33%;
+  margin-bottom: 3%;
+}
+
+main button{
+	padding: 0.8% 1%;
+	border: none;
+	background-color: orange;
+	color: white;
+	text-decoration: none;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	border-color:rgb(158, 157, 157)
+}
+
+.fa-brands{
+	color: orange;
+}
+
+.social{
+	padding-top: 3%;
+}
+
+.social span{
+	margin-right: 5%;
+}
+
+/* SECOND SECTION - ABOUT US */
+
+.about{
+	width:100%;
+	background-image: url("sec2.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+
+.container{
+	width: 40%;
+  /* 左右对齐 */
+	text-align: justify;
+	padding-bottom: 100px;
+	padding-left: 40%;
+}
+
+.container h3, .container h2 {
+	text-align: start;
+}
+
+.container p{
+	line-height: 1.5rem;
+	margin: 7% 0;
+}
+
+.container a{
+	padding: 2.5% 2%;
+	background-color: orange;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+/* THIRD SECTION - MENUFOOD */
+
+.menu{
+	width:100%;
+}
+
+.menufood{
+	background: #f2f6f7;
+	padding-bottom: 3rem;
+}
+
+.menu li{
+	display: inline-block;
+	padding: 50px 20px 10px 20px;
+}
+
+.menu ul {
+	border-bottom: 0.5px solid #dcdfe0;
+	width: 40%;
+	margin-left: 30%;
+}
+
+.menu li:first-child{
+	color: orange;
+	border-bottom:1px solid orange;
+}
+
+.food img{
+	width: 20%;
+	/* border: 2px solid orange;
+	border-radius: 2%; */
+}
+
+.food > div{
+	display:flex;
+	justify-content: space-evenly;
+	margin: 3% 5%;
+}
+
+
+/* FOURTH SECTION - SCHEDULE */
+
+.fa-phone{
+	color: orange;
+	border: 1px solid orange;
+	border-radius: 50%;
+	padding: 1rem;
+}
+.call{
+	text-align: center;
+}
+.call span, .call a{
+	display:block;
+	text-align: center;
+}
+.call i{
+	display: inline-block;
+	margin-top: 3rem;
+	font-size: 1.8rem;
+}
+.call i, .call a{
+	margin-bottom: 1rem;
+}
+
+.call span{
+	margin-bottom: 0.5rem;
+}
+
+.call a{
+	font-size: 2.7rem;
+	color:orange;
+}
+
+/* flex */
+.monfri{
+	display:flex;
+	justify-content: space-evenly;
+}
+
+.workdays p+p{
+	font-size: 2rem;
+	font-weight: bold;
+  margin-top:1.5%;
+}
+
+.video{
+	text-align: center;
+}
+
+.video > video{
+	width: 75%;
+	margin: 5rem 0;
+  /* border: 2px solid white; */
+  border-radius: 2%;
+}
+
+.gradient{
+	background: linear-gradient(#f2f6f7, #a7c0d4);
+}
+
+/* FIFTH SECTION */
+
+.testimonials{
+	background: linear-gradient(#a7c0d4, white);
+	text-align: center;
+	margin-bottom: 9rem;
+}
+
+.customer img{
+	margin: 3.5rem 0 1rem 0 ;
+	border-radius: 50%;
+	width: 8%;
+}
+
+.customer span{
+	color: gray;
+}
+
+.fa-star{
+	color:orange;
+	margin: 1.2rem 0;
+}
+
+.testimonials > p{
+	margin: 0 8rem;
+	line-height: 2rem;
+	font-style: italic;
+  text-align: center;
+}
